@@ -1,0 +1,226 @@
+﻿ string path = @"coordenadas.json";
+            string path1 = @"coordenadasCasa.json";
+            CoordenadasObjeto cordObj = new CoordenadasObjeto
+            {
+                X = 0,
+                Y = 0,
+                Z = 0
+            };
+            string json1 = JsonConvert.SerializeObject(cordObj, Formatting.Indented);
+            System.IO.File.WriteAllText(path1, json1);
+            List<CoordenadasCasa> auxi = new List<CoordenadasCasa>
+            {
+               //PARED DERECHA
+                new CoordenadasCasa
+               {
+                 nombre="paredderecha",
+                 X = 0,
+                 Y = 0,
+                 Z = -15,
+                 dimension=2,
+                 altura=0.5f,
+                 ancho=4f,
+                 largo=4f,
+                 AnguloX=0,
+                 AnguloY = 0,
+                 AnguloZ = 0,
+                 colorX=1,
+                 colorY=1
+               },
+               //PARED IZQUIERDA
+               
+               new CoordenadasCasa
+               {
+               nombre="paredizquierda",
+                 X = +4,
+                 Y = 0,
+                 Z = -15,
+                 dimension=2,
+                 altura=0.5f,
+                 ancho=4,
+                 largo=4,
+                 AnguloX=0,
+                 AnguloY = 0,
+                 AnguloZ = 0,
+                 colorX=2f,
+                 colorY=2f
+               },
+               //PARED ATRAS
+                new CoordenadasCasa
+               {
+                 nombre="paredatras",
+                 X = 0,
+                 Y = 0f,
+                 Z = -19f,
+                 dimension=2,
+                 altura=4.5f,
+                 ancho=1,
+                 largo=4f,
+                 AnguloX=0,
+                 AnguloY = 0,
+                 AnguloZ = 0,
+                 colorX =0.2f,
+                 colorY=0.2f
+               },
+                //pared adelante
+                new CoordenadasCasa
+               {
+                 nombre="paredelante",
+                 X = 0,
+                 Y = 0f,
+                 Z = -15f,
+                 dimension=2,
+                 altura=4.5f,
+                 ancho=1,
+                 largo=4f,
+                 AnguloX=0,
+                 AnguloY = 0,
+                 AnguloZ = 0,
+                 colorX=1.5f,
+                 colorY=1.5f
+               },
+               //TECHO
+                new CoordenadasCasa
+               {
+                 nombre="techo",
+                 X = 0f,
+                 Y = 0f,
+                 Z = -15,
+                 dimension=2,
+                 altura=4.5f,
+                 ancho=4,
+                 largo=0.5f,
+                 AnguloX=0,
+                 AnguloY = 0,
+                 AnguloZ = 0,
+                 colorX=0.5f,
+                 colorY=0.2f
+               },
+                 //TECHO DERECHA
+                new CoordenadasCasa
+               {
+                 nombre="techoderecha",
+                 X = 4.2f,
+                 Y = 0,
+                 Z = -15,
+                 dimension=2,
+                 altura=0.5f,
+                 ancho=4f,
+                 largo=2.5f,
+                 AnguloX=0,
+                 AnguloY = 0,
+                 AnguloZ = -40,
+                 colorX=1,
+                 colorY=1
+               },
+               //TECHO IZQUIERDA
+               
+               new CoordenadasCasa
+               {
+                nombre="techoizquierda",
+                 X = 0.5f,
+                 Y = -0.5f,
+                 Z = -15,
+                 dimension=2,
+                 altura=0.5f,
+                 ancho=4,
+                 largo=2.8f,
+                 AnguloX=0,
+                 AnguloY = 0,
+                 AnguloZ = 40,
+                 colorX=2f,
+                 colorY=2f
+               },
+                //Puerta adelante
+                new CoordenadasCasa
+               {
+                nombre="puerta",
+                 X = 1.7f,
+                 Y = -0.5f,
+                 Z = -14.9f,
+                 dimension=2,
+                 altura=1,
+                 ancho=0.5f,
+                 largo=3.5f,
+                 AnguloX=0,
+                 AnguloY = 0,
+                 AnguloZ = 0,
+                 colorX=0.2f,
+                 colorY=0.2f
+               },
+                
+                //VENTANA adelante IZQUIERDAS
+                new CoordenadasCasa
+               {
+                nombre="ventanaDelIzq", 
+                 X = 0.8f,
+                 Y = -1.3f,
+                 Z = -14.9f,
+                 dimension=2,
+                 altura=0.5f,
+                 ancho=0.5f,
+                 largo=0.5f,
+                 AnguloX=0,
+                 AnguloY = 0,
+                 AnguloZ = 0,
+                 colorX=0.2f,
+                 colorY=0.2f
+               },
+                
+                //VENTANA adelante DERECHA
+                new CoordenadasCasa
+               {
+                nombre="ventanaDelDer",
+                 X = 3.2f,
+                 Y = -1.3f,
+                 Z = -14.9f,
+                 dimension=2,
+                 altura=0.5f,
+                 ancho=0.5f,
+                 largo=0.5f,
+                 AnguloX=0,
+                 AnguloY = 0,
+                 AnguloZ = 0,
+                 colorX=0.2f,
+                 colorY=0.2f
+               },
+                //VENTA PARED DERECHA
+                new CoordenadasCasa
+               {
+                 nombre="venatanaParedDer",
+                 X = -0.1f,
+                 Y = -0.8f,
+                 Z = -15,
+                 dimension=2,
+                 altura=0.5f,
+                 ancho=2f,
+                 largo=2f,
+                 AnguloX=0,
+                 AnguloY = 0,
+                 AnguloZ = 0,
+                 colorX=0.5f,
+                 colorY=0.5f
+               },
+               //VENTANA PARED IZQUIERDA
+               
+               new CoordenadasCasa
+               {
+                 nombre="venatanaParedIzq",
+                 X = +4.1f,
+                 Y = -0.8f,
+                 Z = -15,
+                 dimension=2,
+                 altura=0.5f,
+                 ancho=2,
+                 largo=2,
+                 AnguloX=0,
+                 AnguloY = 0,
+                 AnguloZ = 0,
+                 colorX=0.5f,
+                 colorY=0.5f
+               },
+
+            };
+
+            string json = JsonConvert.SerializeObject(auxi.ToArray(), Formatting.Indented);
+            System.IO.File.WriteAllText(path, json);
