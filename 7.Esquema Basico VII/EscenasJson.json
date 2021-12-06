@@ -1,0 +1,35 @@
+[
+  {
+    "objeto": "hormiga",
+    "parte": "",
+    "accion": "T",
+    "X": 1.0,
+    "Y": 0.0,
+    "Z": 0.0,
+    "tiempo": 4.0,
+    "tiempoEspera": 0.0,
+    "velocidad": 5E-06
+  },
+  {
+    "objeto": "libro",
+    "parte": "arriba",
+    "accion": "R",
+    "X": 1.0,
+    "Y": 0.0,
+    "Z": 0.0,
+    "tiempo": 3.0,
+    "tiempoEspera": 1.0,
+    "velocidad": 1.6666667E-06
+  },
+  {
+    "objeto": "libro",
+    "parte": "arriba",
+    "accion": "R",
+    "X": -1.0,
+    "Y": 0.0,
+    "Z": 0.0,
+    "tiempo": 2.0,
+    "tiempoEspera": 4.0,
+    "velocidad": 1.6666667E-06
+  }
+]

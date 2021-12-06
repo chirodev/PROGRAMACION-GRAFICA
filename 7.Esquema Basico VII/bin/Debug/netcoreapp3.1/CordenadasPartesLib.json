@@ -1,0 +1,32 @@
+﻿[
+  {
+    "nombre": "abajo",
+    "X": 0.0,
+    "Y": 0.0,
+    "Z": -15.0,
+    "dimension": 2,
+    "AnguloX": 0.0,
+    "AnguloY": 0.0,
+    "AnguloZ": 0.0,
+    "altura": 1.5,
+    "ancho": 1.0,
+    "largo": 0.2,
+    "colorX": 1.0,
+    "colorY": 1.0
+  },
+  {
+    "nombre": "arriba",
+    "X": 0.0,
+    "Y": 0.15,
+    "Z": -15.0,
+    "dimension": 2,
+    "AnguloX": 0.0,
+    "AnguloY": 0.0,
+    "AnguloZ": 0.0,
+    "altura": 1.5,
+    "ancho": 1.0,
+    "largo": 0.2,
+    "colorX": 2.0,
+    "colorY": 2.0
+  }
+]
